@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
   }
+ 
   body{
     background-image: url('image.jpg');
 
@@ -15,6 +16,7 @@
     background-position: center;
   }
   .wrapper{
+    box-shadow: 3px 4px 3px black;
     width: 420px;
     background: transparent;
     border: 2px solid rgba(255, 255, 255, .2);
@@ -47,7 +49,7 @@
     padding: 20px 45px 20px 20px;
   }
   .infield input::placeholder{
-    color: #fff;
+    color: #ffffff;
   }
   .infield i{
     position: absolute;
@@ -89,17 +91,17 @@
     color: #333;
     font-weight: 600;
   }
-  .wrapper .register-link{
+  .wrapper .signin-link{
     font-size: 14.5px;
     text-align: center;
     margin: 20px 0 15px;
-  
   }
-  .register-link p a{
+  .signin-link p a{
     color: #fff;
     text-decoration: none;
     font-weight: 600;
   }
-  .register-link p a:hover{
+  
+  .signin-link p a:hover{
     text-decoration: underline;
   }
