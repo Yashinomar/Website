@@ -9,16 +9,17 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url(bg.jpg) no-repeat;
+    background-image: url('image.jpg');
     background-size: cover;
     background-position: center;
   }
   .wrapper{
+    box-shadow: 3px 4px 3px black;
     width: 420px;
     background: transparent;
     border: 2px solid rgba(255, 255, 255, .2);
     backdrop-filter: blur(9px);
-    color: #fff;
+    color: #ffffff;
     border-radius: 12px;
     padding: 30px 40px;
   }
