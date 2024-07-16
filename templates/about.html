@@ -1,14 +1,22 @@
-{% extends 'base.html' %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    {% block title %}<title>About</title>{% endblock %}
+    <title>About</title>
     <link rel="stylesheet" href="/static/css/homestyle.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/homestyle.css') }}">
 </head>
-{% block body %}
-<body>
+
+<body><nav>
+    <ul>
+       <li> <a href="#">Logo</a></li>
+       <li> <a href="{{ url_for('base') }}">Home</a></li>
+       <li> <a href="{{ url_for('about') }}">About</a></li>
+       <li> <a href="{{ url_for('index') }}">Signout</a></li>
+    </ul>
+</nav>
       <h1>Event Management Website</h1>
     <p>This is an event management application that allows users to register, log in, create, view, and manage events.</p>
 </body>
-{% endblock %}
+
 </html>

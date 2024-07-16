@@ -4,23 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/homestyle.css') }}">
-    {% block title %} {% endblock %}
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
-    </style>
 
-    
-    </style>
     <nav>
         <ul>
-           <li> <a href="#">Logo</a></li>
-           <li> <a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('base') }}"><img src="/static/images/icon-svg.png" style="height: 120px; width: 90px;";>Imperia</a></li>
+           <li> <a href="{{ url_for('base') }}">Home</a></li>
            <li> <a href="{{ url_for('about') }}">About</a></li>
            <li> <a href="{{ url_for('index') }}">Signout</a></li>
         </ul>
     </nav>
-    {% block body %}
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Connect,Host</h3>
+            <span>Host with us Connect through us</span>
+            <p>Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph.</p>
 
-    {% endblock %}
+        </div>
+        
+        
+    </section>
 </body>
 </html>

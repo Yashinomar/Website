@@ -19,22 +19,27 @@
           <div class="infield">
             <input type="email" placeholder="Email" name="email"/>
             <i class='bx bx-envelope'></i>
-            <label></label>
+      
           </div>
           <div class="infield">
-            <input type="password" placeholder="Password" required>
-            <i class='bx bxs-lock-alt' ></i>
+            <input type="text" placeholder="Phone Number" name="phone"/>
+            <i class='bx bx-phone'></i>
+
           </div>
-          <div class="infield">
-            <input type="password" placeholder="Confirm Password" required>
-            <i class='bx bxs-lock-alt' ></i>
+            <div class="infield">
+              <input type="password" placeholder="Password" required>
+              <i class='bx bxs-lock-alt' ></i>
+            </div>
+            <div class="infield">
+              <input type="password" placeholder="Confirm Password" required>
+              <i class='bx bxs-lock-alt' ></i>
+            </div>
+            <div class="signin-link">
+              <p>Already have an account? <a href="{{ url_for('index')}}">Login</a></p>
+            </div>
+
+            <button type="submit" class="btn">Sign Up</button>
           </div>
-          <div class="signin-link">
-            <p>Already have an account? <a href="{{ url_for('index')}}">Login</a></p>
-          </div>
-          
-          <button type="submit" class="btn">Sign Up</button>
-          
         </form>
       </div>
             
