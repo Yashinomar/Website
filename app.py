@@ -5,7 +5,7 @@ mydb = mysql.connector.connect(
     user='root',
     passwd='password0'
 )
-print(mydb)
+
 app = Flask(__name__)
 @app.route('/')
 def index():
@@ -13,5 +13,8 @@ def index():
 @app.route('/register')
 def Signin():
     return render_template('register.html')
+@app.route('/home')
+def home():
+    return render_template('home.html')
 if __name__ == "main":
     app.run(debug=True)

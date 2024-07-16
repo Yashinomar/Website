@@ -6,7 +6,7 @@
   }
  
   body{
-    background-image: url('loginpage.jpg');
+    background-image: url('/static/images/loginpage.jpg');
     background-size: cover;
     min-height: 100vh;
 
@@ -108,4 +108,11 @@
   
   .signin-link p a:hover{
     text-decoration: underline;
+  }
+  #font{
+    text-align: center;
+    font-family: "pt serif";
+    text-shadow: 2px 2px 5px rgb(84, 125, 144);
+    font-weight: bold;
+
   }

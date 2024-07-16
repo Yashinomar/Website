@@ -2,14 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: "pt serif","Poppins", sans-serif;
   }
   body{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url('loginpage.jpg');
+    background-image: url('/static/images/loginpage.jpg');
     background-size: cover;
     background-position: center;
   }
@@ -111,3 +111,4 @@
   .register-link p a:hover{
     text-decoration: underline;
   }
+ 
