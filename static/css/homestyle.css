@@ -4,13 +4,23 @@
 }
 body{
     min-height: 100vh;
-    background-image: url('/static/images/home.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+   
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+#home{
+    background-image: url("/static/images/hero4.png");
+    height: 90vh;
+    width: 90%;
+    background-size: cover;
+    background-position: top 25% right 0%;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 
+    
+}
 nav{
     background-color:rgba(255,255,255,0.2);
     backdrop-filter: blur(10px);
@@ -27,19 +37,23 @@ nav ul{
 }
 nav li{
     height: 50px;
+    
 }
 nav a{
     height: 100%;
     text-decoration: none;
     color: black;
-    padding: 0 30px;
+    padding: 0 28px;
     display: flex;
     align-items: center;
 }
-nav a:hover{
-    background-color: #f0f0f0;
+nav a:hover
+{
+    background-color: rgb(0, 0, 0);
     border-radius: 20px;
+    color: white;
 }
+
 nav li:first-child{
     margin-right: auto;
     display:flex;
@@ -49,4 +63,43 @@ nav li:first-child{
     font-weight: 700;
     color: var(--title-color);
 
+}
+
+#home button{
+    background-image: url(/static/images/button.png);
+    color: #116e57;
+    background-color: transparent;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+}
+#home h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #116e57;
+}
+#home h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+#home h4{
+    padding-bottom:  15px;
+
+}
+#home p{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 89;
+}
+.home .content{
+    margin: 30px;
+    
+}
+.container{
+    max-width: 40px;
+    max-height: 40px;
+}
+.container img {
+    max-width: 90%;
+    max-height: 100%;
+    display: block;
 }

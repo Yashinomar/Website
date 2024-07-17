@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/homestyle.css') }}">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/homestyle.css') }}">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <title>Event Management</title>
 
+    </head>
+    <body>
 
-</head>
-<body>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('base') }}"><img src="/static/images/icon-svg.png" style="height: 120px; width: 90px;";>Imperia</a></li>
+               <li> <a class="active" herf="{{ url_for('base') }}">Home</a></li>
+               <li> <a href="{{ url_for('about') }}">About</a></li>
+               <li> <a href="{{ url_for('index') }}">Signout</a></li>
+               <li> <a href="{{url_for('profile')}}">
+                <div class="container">
+                <img src="/static/images/profile_icon.png" alt="Your Image">
+                    </div>
+                </a></li>
+            </ul>
+        </nav>
+        <section id="home">
+                <h2>Event with us</h2>
+                <h1>Learn with us,Teach with us</h1>
+                <p>Eventy is here to provide for the entire event experience.<br>
+                   Whether it's finding speakers, managing your user group or organizing a conference, we've got you covered.</p>
 
-    <nav>
-        <ul>
-            <li><a href="{{ url_for('base') }}"><img src="/static/images/icon-svg.png" style="height: 120px; width: 90px;";>Imperia</a></li>
-           <li> <a href="{{ url_for('base') }}">Home</a></li>
-           <li> <a href="{{ url_for('about') }}">About</a></li>
-           <li> <a href="{{ url_for('index') }}">Signout</a></li>
-        </ul>
-    </nav>
-    <section class="home" id="home">
-        <div class="content">
-            <h3>Connect,Host</h3>
-            <span>Host with us Connect through us</span>
-            <p>Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph.</p>
-
-        </div>
-        
-        
-    </section>
-</body>
+                <button>Check</button>
+        </section>
+        <script src="/script.js"></script>
+    </body>
 </html>

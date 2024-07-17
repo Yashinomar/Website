@@ -16,9 +16,13 @@ def Signin():
 @app.route('/base')
 def base():
     return render_template('base.html')
-@app.route('/about')
+@app.route('/base/about')
 def about():
     return render_template('about.html')
+@app.route('/base/profile')
+def profile():
+    return render_template('profile.html')
+
 
 if __name__ == "main":
     app.run(debug=True)
