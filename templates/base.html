@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="{{ url_for('static', filename='css/homestyle.css') }}">
         <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
         <title>Event Management</title>
 
     </head>
@@ -31,6 +32,28 @@
 
                 <button>Check</button>
         </section>
-        <script src="/script.js"></script>
+        <section class="home" id="slide">
+            <div class="home-slider">
+                <div class="wrapper">
+                    <div class="slider">
+                        <a href="{{url_for('profile')}}"><img src="/static/images/hero.jpg" alt="" ></a>
+                    </div>
+                    <div class="slider">
+                        <a href="{{url_for('profile')}}"><img src="/static/images/hero.jpg" alt="" ></a>
+                    </div>
+                    <div class="slider">
+                        <a href="{{url_for('profile')}}"><img src="/static/images/hero.jpg" alt="" ></a>
+                    </div>
+                    <div class="slider">
+                        <a href="{{url_for('profile')}}"><img src="/static/images/hero.jpg" alt="" ></a>
+                    </div>
+                    <div class="slider">
+                        <a href="{{url_for('profile')}}"><img src="/static/images/hero.jpg" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="/app.js"></script>
     </body>
 </html>
