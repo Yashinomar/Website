@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+
 #import mysql.connector
 #mydb = mysql.connector.connect(
 #    host='localhost',
@@ -22,8 +23,14 @@ def about():
 @app.route('/base/profile')
 def profile():
     return render_template('profile.html')
+@app.route('/event')
+def event():
+    return render_template('event.html')
+@app.route('/event1')
+def event1():
+    return render_template('event1.html')
 
 
 
 if __name__ == "main":
-    app.run(debug=True,port=8001)
+    app.run(debug=True)

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/event.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/homestyle.css') }}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('base') }}"><img src="/static/images/icon-svg.png" style="height: 120px; width: 90px;";>Imperia</a></li>
+            <li><a herf="{{ url_for('base') }}">Home</a></li>
+           <li> <a href="{{ url_for('about') }}">About</a></li>
+           <li> <a href="{{ url_for('index') }}">Signout</a></li>
+           <li> <a href="{{url_for('profile')}}">
+            <div class="container">
+            <img src="/static/images/profile_icon.png" alt="Your Image">
+                </div>
+            </a></li>
+        </ul>
+    </nav>
+    <div class="container1">
+        <div class="event">
+            <div class="image">
+                <img src="/static/images/img5.jpg" >
+            </div>
+            <div class="detail">
+                <h1>PhotoGraphy Cource| Event</h1>
+                <h2>500₹</h2>
+                <h3>Date:<span> Tue, Feb 27, 2024 - 10:00 AM to 6:00 PM</span></h3>
+                <h3>Status:<span> Online</span></h3>
+                <p>
+                    Welcome to the creative world of photography! This course will teach you how to capture moments with artistry and vision. Whether you're a beginner or looking to improve, we'll cover composition, lighting, and storytelling through imagery. Get ready to explore your creativity, master framing, and discover the magic of photography with me!</p>
+            
+                <form><button>Book Now</button></form>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
